@@ -24,8 +24,8 @@ const Header = () => {
           <a href="#portfolio" className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth">
             Portfolio
           </a>
-          <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth">
-            Contact
+          <a href="/student-info" className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth">
+            Student Info
           </a>
         </nav>
 

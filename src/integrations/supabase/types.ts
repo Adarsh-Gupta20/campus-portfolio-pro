@@ -14,7 +14,117 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      student_documents: {
+        Row: {
+          academic_year: string | null
+          description: string | null
+          document_name: string
+          document_type: string
+          file_path: string
+          file_size: number | null
+          id: string
+          mime_type: string | null
+          semester: number | null
+          upload_date: string
+          user_id: string
+          verification_date: string | null
+          verified: boolean | null
+          verified_by: string | null
+        }
+        Insert: {
+          academic_year?: string | null
+          description?: string | null
+          document_name: string
+          document_type: string
+          file_path: string
+          file_size?: number | null
+          id?: string
+          mime_type?: string | null
+          semester?: number | null
+          upload_date?: string
+          user_id: string
+          verification_date?: string | null
+          verified?: boolean | null
+          verified_by?: string | null
+        }
+        Update: {
+          academic_year?: string | null
+          description?: string | null
+          document_name?: string
+          document_type?: string
+          file_path?: string
+          file_size?: number | null
+          id?: string
+          mime_type?: string | null
+          semester?: number | null
+          upload_date?: string
+          user_id?: string
+          verification_date?: string | null
+          verified?: boolean | null
+          verified_by?: string | null
+        }
+        Relationships: []
+      }
+      student_profiles: {
+        Row: {
+          address: string | null
+          cgpa: number | null
+          created_at: string
+          date_of_birth: string | null
+          department: string | null
+          email: string
+          emergency_contact_name: string | null
+          emergency_contact_phone: string | null
+          enrollment_year: number | null
+          first_name: string
+          id: string
+          last_name: string
+          phone: string | null
+          student_id: string
+          updated_at: string
+          user_id: string
+          year_of_study: number | null
+        }
+        Insert: {
+          address?: string | null
+          cgpa?: number | null
+          created_at?: string
+          date_of_birth?: string | null
+          department?: string | null
+          email: string
+          emergency_contact_name?: string | null
+          emergency_contact_phone?: string | null
+          enrollment_year?: number | null
+          first_name: string
+          id?: string
+          last_name: string
+          phone?: string | null
+          student_id: string
+          updated_at?: string
+          user_id: string
+          year_of_study?: number | null
+        }
+        Update: {
+          address?: string | null
+          cgpa?: number | null
+          created_at?: string
+          date_of_birth?: string | null
+          department?: string | null
+          email?: string
+          emergency_contact_name?: string | null
+          emergency_contact_phone?: string | null
+          enrollment_year?: number | null
+          first_name?: string
+          id?: string
+          last_name?: string
+          phone?: string | null
+          student_id?: string
+          updated_at?: string
+          user_id?: string
+          year_of_study?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
